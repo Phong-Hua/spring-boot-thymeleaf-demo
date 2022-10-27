@@ -1,0 +1,6 @@
+Step 1: Create CSS file at src/main/resources/static
+
+Step 2: REference CSS in Thymeleaf template
+<link rel="stylesheet" th:href="@{/css/demo.css}" />
+
+Step 3: Apply CSS
