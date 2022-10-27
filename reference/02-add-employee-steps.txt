@@ -1,0 +1,5 @@
+Step 1: New "Add Employee" button
+
+Step 2: Create HTML form for new employee
+
+Step 3: Process form data to save employee
