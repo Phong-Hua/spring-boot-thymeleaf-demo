@@ -63,4 +63,13 @@ public class EmployeeController {
 		// send over to our form
 		return "employees/employee-form";
 	}
+	
+	@GetMapping("/delete")
+	public String delete(@RequestParam("employeeId") int theId) {
+		// delete employee
+		employeeService.deleteById(theId);
+		
+		// use a redirect to prevent duplicate submissions
+		return "redirect:/employees/list";
+	}
 }
